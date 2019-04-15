@@ -20,7 +20,7 @@ npm i multi-rename
 
 ## Usage
 
-```
+```js
 const multiRename = require('multi-rename');
 
 multiRename('[c] - [ymd] - [n][e]', [

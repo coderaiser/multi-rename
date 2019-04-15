@@ -2,7 +2,7 @@
   "name": "multi-rename",
   "version": "1.0.0",
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
-  "description": "rename strings of array according to pattern",
+  "description": "rename strings of an array according to pattern",
   "homepage": "http://github.com/coderaiser/multi-rename",
   "main": "legacy/multi-rename.js",
   "repository": {
