@@ -28,7 +28,7 @@ multiRename('[c] - [ymd] - [n][e]', [
 ]);
 // returns
 
-01 - 2019-04-15 - hello.txt
+'01 - 2019-04-15 - hello.txt'
 ```
 
 ## Patterns
