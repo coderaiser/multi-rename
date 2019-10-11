@@ -1,0 +1,11 @@
+2019.10.11, v2.0.0
+
+feature:
+- (multi-rename) drop legacy support
+- (package) madrun v3.0.6
+- (package) eslint-plugin-putout v2.0.1
+- (package) eslint-plugin-node v10.0.0
+- (package) eslint v6.5.1
+- (package) shortdate v2.0.0
+- (package) nyc v14.1.1
+
