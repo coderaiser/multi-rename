@@ -34,7 +34,7 @@
     "mock-require": "^3.0.3",
     "nodemon": "^3.1.11",
     "nyc": "^17.1.0",
-    "putout": "^6.13.0",
+    "putout": "^41.7.3",
     "supertape": "^1.2.3",
     "try-catch": "^2.0.0"
   },
