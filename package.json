@@ -30,7 +30,7 @@
     "eslint": "^9.39.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-putout": "^29.4.0",
-    "madrun": "^3.0.6",
+    "madrun": "^12.1.0",
     "mock-require": "^3.0.3",
     "nodemon": "^1.14.12",
     "nyc": "^14.1.1",
