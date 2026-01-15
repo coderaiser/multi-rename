@@ -1,3 +1,19 @@
+2026.01.15, v3.0.0
+
+feature:
+- 6bc19a9 multi-rename: drop support of node < 22
+- bba7a76 multi-rename: migrate to ESM
+- 7a4587a multi-rename: c8 v10.1.3
+- 2a9056d multi-rename: try-catch v4.0.7
+- bad7807 multi-rename: supertape v12.0.12
+- 5a076f1 multi-rename: putout v41.7.3
+- d76fa59 multi-rename: nyc v17.1.0
+- b6e12f8 multi-rename: nodemon v3.1.11
+- 51ce5a8 multi-rename: madrun v12.1.0
+- 3c187a9 multi-rename: eslint-plugin-putout v29.4.0
+- a0d4902 multi-rename: eslint-plugin-node v11.1.0
+- 86ffb0a multi-rename: eslint v9.39.2
+
 2019.10.16, v2.0.2
 
 fix:
