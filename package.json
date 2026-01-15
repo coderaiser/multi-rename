@@ -1,13 +1,14 @@
 {
   "name": "multi-rename",
   "version": "2.0.2",
+  "type": "module",
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
   "description": "rename strings of an array according to pattern",
   "homepage": "http://github.com/coderaiser/multi-rename",
   "main": "lib/multi-rename.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/coderaiser/multi-rename.git"
+    "url": "git+https://github.com/coderaiser/multi-rename.git"
   },
   "scripts": {
     "test": "madrun test",
@@ -34,7 +35,8 @@
     "madrun": "^12.1.0",
     "mock-require": "^3.0.3",
     "nodemon": "^3.1.11",
-    "putout": "^41.7.3",
+    "putout": "^41.8.1",
+    "redlint": "^5.0.4",
     "supertape": "^12.0.12",
     "try-catch": "^4.0.7"
   },

@@ -1,10 +1,6 @@
-'use strict';
-
-const test = require('supertape');
-const tryCatch = require('try-catch');
-const multiRename = require('../lib/multi-rename');
-const mockRequire = require('mock-require');
-const {reRequire} = mockRequire;
+import {test, stub} from 'supertape';
+import {tryCatch} from 'try-catch';
+import {multiRename} from '../lib/multi-rename.js';
 
 test('multi-rename: no args', (t) => {
     const [e] = tryCatch(multiRename);
@@ -21,45 +17,33 @@ test('multi-rename: no names', (t) => {
 });
 
 test('multi-rename: [n][e]', (t) => {
-    const [name] = multiRename('[e].[n]', [
-        'hello.txt',
-    ]);
+    const [name] = multiRename('[e].[n]', ['hello.txt']);
     
     t.equal(name, '.txt.hello');
     t.end();
 });
 
 test('multi-rename: [c]', (t) => {
-    const [name] = multiRename('[c] - [n][e]', [
-        'hello.txt',
-    ]);
+    const [name] = multiRename('[c] - [n][e]', ['hello.txt']);
     
     t.equal(name, '1 - hello.txt');
     t.end();
 });
 
 test('multi-rename: [ymd]', (t) => {
-    mockRequire('shortdate', () => '2019-04-15');
-    const multiRename = reRequire('../lib/multi-rename');
+    const shortdate = stub().returns('2019-04-15');
     
-    const [name] = multiRename('[ymd] - [n][e]', [
-        'hello.txt',
-    ]);
-    
-    mockRequire.stopAll();
+    const [name] = multiRename('[ymd] - [n][e]', ['hello.txt'], {
+        shortdate,
+    });
     
     t.equal(name, '2019-04-15 - hello.txt');
     t.end();
 });
 
 test('multi-rename: not extension', (t) => {
-    const [name] = multiRename('[n][e]', [
-        'hello',
-    ]);
-    
-    mockRequire.stopAll();
+    const [name] = multiRename('[n][e]', ['hello']);
     
     t.equal(name, 'hello');
     t.end();
 });
-

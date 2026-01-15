@@ -2,3 +2,7 @@ node_modules
 .nyc_output
 legacy
 
+.idea
+*.swp
+yarn-error.log
+coverage
