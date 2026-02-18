@@ -1,8 +1,10 @@
+*.config.*
+*.log
+*.loc
+
 .*
-test
 
 madrun.js
 
-yarn-error.log
+test
 coverage
-*.config.*
