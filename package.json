@@ -35,7 +35,7 @@
     "madrun": "^13.0.0",
     "mock-require": "^3.0.3",
     "nodemon": "^3.1.11",
-    "putout": "^41.8.1",
+    "putout": "^42.0.5",
     "redlint": "^5.0.4",
     "supertape": "^12.0.12",
     "try-catch": "^4.0.7"
